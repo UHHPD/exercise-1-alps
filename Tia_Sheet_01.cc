@@ -1,20 +1,32 @@
 #include <fstream>
+#include <iostream>
 
-void Sheet01(){
+int main(){
   // Exercise 01: hello
-  cout << "Hello World!" << endl;
+  std::cout << "Hello World!" << std::endl;
 
   // Exercise 02: input/output
-  cout << "Input value for 'zhal': " ; cin >> int zhal;
-  cout << ">> Your input value is: " << zhal << endl;
+  int zhal;
+  std::cout << "Input value for 'zhal': " ; std::cin >> zhal;
+  std::cout << ">> Your input value is: " << zhal << std::endl;
 
   std::ofstream fout("output.txt");
-  fout << zahl << endl;
+  fout << zhal << std::endl;
   fout.close();
 
   std::ifstream fin("output.txt");
-  fin >> int zahl;
+  fin >> zhal;
   fin.close();
 
-  // check with cat output.txt
+
+  // Terminal Output
+  // ~/tiaEx1cc$ g++ -o Sheet01_compiled Sheet01.cpp 
+  // ~/tiaEx1cc$ ./Sheet01_compiled 
+  // Hello World!
+  // Input value for 'zhal': 9
+  // >> Your input value is: 9
+  // ~/tiaEx1cc$ cat output.txt
+  // 9
+
+  std::cout << "Done!" << std::endl;
 }
