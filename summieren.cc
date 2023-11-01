@@ -7,7 +7,7 @@ int main(){
   int sumNumber;
   std::ifstream fin("daten.txt");
   std::ofstream fout("datensumme.txt");
-  for(int i; i<234; ++i){
+  for(int i=0; i<234; ++i){
       fin >> evenNumber;
       fin >> oddNumber;
       sumNumber = evenNumber + oddNumber;
