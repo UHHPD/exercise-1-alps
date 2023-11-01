@@ -8,11 +8,11 @@ int main(){
   int pair_sum;
   
   std::ifstream fin("daten.txt");
-  std::ofstream fout("datensumme.txt");
+  std::ofstream fout("datensumme3.txt");
   
   if ( fin.is_open() ){
     int j = 0, w;
-    for(int i; i<234; ++i){
+    for(int i; i<468; ++i){
       fin >> data_val;
       if(i%2 == 0){
         j+=1, w=0; 
