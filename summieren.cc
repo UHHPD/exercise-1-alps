@@ -15,7 +15,6 @@ int main(){
   }
   fin.close();
   fout.close();
-  std::cout << "Done" << std::endl;
 }
 
 /*int main(){
